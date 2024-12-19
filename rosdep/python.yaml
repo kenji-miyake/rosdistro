@@ -2604,6 +2604,16 @@ python-opencv:
     '7': [opencv-python]
   slackware: [opencv]
   ubuntu: [python-opencv]
+python-opencv-contrib-pip:
+  debian:
+    pip:
+      packages: [opencv-contrib-python]
+  fedora:
+    pip:
+      packages: [opencv-contrib-python]
+  ubuntu:
+    pip:
+      packages: [opencv-contrib-python]
 python-opengl:
   arch: [python2-opengl]
   debian: [python-opengl]
@@ -4967,6 +4977,14 @@ python3-awsiotsdk-pip:
   ubuntu:
     pip:
       packages: [awsiotsdk]
+python3-babel:
+  debian: [python3-babel]
+  fedora: [python3-babel]
+  opensuse: [python3-Babel]
+  rhel:
+    '*': [python3-babel]
+    '7': null
+  ubuntu: [python3-babel]
 python3-babeltrace:
   alpine: [py3-babeltrace]
   debian: [python3-babeltrace]
@@ -5587,13 +5605,19 @@ python3-distro:
   ubuntu: [python3-distro]
 python3-distutils:
   debian:
-    '*': [python3-distutils]
+    '*': null
+    bookworm: [python3-distutils]
+    bullseye: [python3-distutils]
+    buster: [python3-distutils]
     stretch: null
   fedora: [python3]
   gentoo: [dev-lang/python]
   nixos: [python3]
   ubuntu:
-    '*': [python3-distutils]
+    '*': null
+    bionic: [python3-distutils]
+    focal: [python3-distutils]
+    jammy: [python3-distutils]
 python3-django:
   debian: [python3-django]
   fedora: [python3-django]
@@ -5743,7 +5767,7 @@ python3-empy:
   opensuse: [python3-empy]
   osx:
     pip:
-      packakges: [empy]
+      packages: [empy]
   rhel: ['python%{python3_pkgversion}-empy']
   ubuntu: [python3-empy]
 python3-environs-pip:
@@ -5797,6 +5821,23 @@ python3-ezdxf:
     focal:
       pip:
         packages: [ezdxf]
+python3-fabric:
+  alpine: [fabric]
+  arch: [fabric]
+  debian: [python3-fabric]
+  fedora: [python3-fabric]
+  gentoo:
+    pip:
+      packages: [fabric]
+  nixos: [Fabric]
+  opensuse: [python-Fabric]
+  osx: [fabric]
+  rhel:
+    '*': [python3-fabric]
+    '8':
+      pip:
+        packages: [fabric]
+  ubuntu: [python3-fabric]
 python3-falcon:
   arch: [python-falcon]
   debian: [python3-falcon]
@@ -5880,16 +5921,7 @@ python3-filfinder-pip:
     pip:
       packages: [fil_finder]
 python3-filterpy-pip:
-  debian:
-    pip:
-      packages: [filterpy]
-  fedora:
-    pip:
-      packages: [filterpy]
-  osx:
-    pip:
-      packages: [filterpy]
-  ubuntu:
+  '*':
     pip:
       packages: [filterpy]
 python3-fiona:
@@ -6104,9 +6136,7 @@ python3-flake8-quotes:
     bullseye:
       pip:
         packages: [flake8-quotes]
-  fedora:
-    '*': [python3-flake8-quotes]
-    '35': null
+  fedora: [python3-flake8-quotes]
   freebsd: [devel/py-flake8-quotes]
   nixos: []
   openembedded: [python3-flake8-quotes@meta-ros-common]
@@ -6944,6 +6974,21 @@ python3-libgpiod:
   ubuntu:
     '*': [python3-libgpiod]
     bionic: null
+python3-libtmux:
+  alpine:
+    pip:
+      packages: [libtmux]
+  arch: [python-libtmux]
+  debian: [python3-libtmux]
+  fedora: [python-libtmux]
+  gentoo: [dev-python/libtmux]
+  opensuse:
+    '*': [python-libtmux]
+    '15.2': null
+  rhel:
+    '*': [python3-libtmux]
+    '8': null
+  ubuntu: [python3-libtmux]
 python3-lingua-franca-pip:
   debian:
     pip:
@@ -7714,6 +7759,11 @@ python3-orjson:
   ubuntu:
     pip:
       packages: [orjson]
+python3-osrf-pycommon:
+  debian: [python3-osrf-pycommon]
+  fedora: [python3-osrf-pycommon]
+  rhel: [python3-osrf-pycommon]
+  ubuntu: [python3-osrf-pycommon]
 python3-overrides:
   arch: [python-overrides]
   debian:
@@ -7909,9 +7959,22 @@ python3-pil:
       packages: [python3-pillow]
   ubuntu: [python3-pil]
 python3-pil-imagetk:
+  alpine: [py3-pillow]
+  arch: [python-pillow]
   debian: [python3-pil.imagetk]
   fedora: [python3-pillow-tk]
+  freebsd: [graphics/py-pillow]
+  gentoo: [dev-python/pillow]
+  nixos: [python3Packages.pillow]
+  openembedded: [python3-pillow@meta-python]
+  opensuse: [python3-Pillow]
+  osx:
+    pip:
+      packages: [Pillow]
   rhel: [python3-pillow-tk]
+  slackware:
+    slackpkg:
+      packages: [python3-pillow]
   ubuntu: [python3-pil.imagetk]
 python3-pip:
   alpine: [py3-pip]
@@ -8648,9 +8711,7 @@ python3-pyside6:
     bullseye:
       pip:
         packages: [PySide6]
-  fedora:
-    '*': [python3-pyside6]
-    '39': null
+  fedora: [python3-pyside6]
   osx:
     pip:
       packages: [PySide6]
@@ -9432,15 +9493,7 @@ python3-segno:
   debian:
     '*': [python3-segno]
     buster: null
-  fedora:
-    '*': [python3-segno]
-    '36': null
-    '37': null
   nixos: [python3Packages.segno]
-  rhel:
-    '*': [python3-segno]
-    '7': null
-    '8': null
   ubuntu:
     '*': [python3-segno]
     bionic:
@@ -9886,6 +9939,16 @@ python3-streamlit-pip:
   '*':
     pip:
       packages: [streamlit]
+python3-streamz:
+  debian:
+    bookworm: [python3-streamz]
+    bullseye: [python3-streamz]
+  opensuse: [python3-streamz]
+  ubuntu:
+    '*': [python3-streamz]
+    focal:
+      pip:
+        packages: [streamz]
 python3-suas-interop-clients-pip:
   debian:
     pip:
@@ -9985,6 +10048,26 @@ python3-texttable:
   openembedded: [python3-texttable@meta-python]
   rhel: ['python%{python3_pkgversion}-texttable']
   ubuntu: [python3-texttable]
+python3-textual:
+  arch: [python-textual]
+  debian: [python3-textual]
+  fedora: [python3-textual]
+  nixos: [python311Packages.textual]
+  ubuntu:
+    '*': [python3-textual]
+    focal: null
+python3-textual-pip:
+  '*':
+    pip:
+      packages: [textual]
+python3-textual-plotext-pip:
+  '*':
+    pip:
+      packages: [textual-plotext]
+python3-textual-web-pip:
+  '*':
+    pip:
+      packages: [textual-web]
 python3-thop-pip:
   debian:
     pip:
@@ -10352,6 +10435,13 @@ python3-uvloop:
   nixos: [python3Packages.uvloop]
   openembedded: [python3-uvloop@meta-ros2]
   ubuntu: [python3-uvloop]
+python3-validators:
+  debian: [python3-validators]
+  fedora: [python3-validators]
+  opensuse: [python3-validators]
+  ubuntu:
+    '*': [python3-validators]
+    focal: null
 python3-vcstool:
   alpine: [vcstool]
   debian: [python3-vcstool]
