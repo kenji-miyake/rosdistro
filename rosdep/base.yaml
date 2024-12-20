@@ -471,9 +471,7 @@ catch2:
   alpine: [catch2]
   arch: [catch2]
   debian: [catch2]
-  fedora:
-    '*': [catch2-devel]
-    '37': null
+  fedora: [catch2-devel]
   freebsd: [catch2]
   gentoo: [dev-cpp/catch]
   nixos: [catch2]
@@ -3417,9 +3415,7 @@ libdpkg-dev:
 libdraco-dev:
   arch: [draco]
   debian: [libdraco-dev]
-  fedora:
-    '*': [draco-devel, draco-static]
-    '39': [draco-devel]
+  fedora: [draco-devel, draco-static]
   nixos: [draco]
   rhel:
     '*': [draco-devel, draco-static]
@@ -3585,6 +3581,19 @@ libext2fs-dev:
   opensuse: [libext2fs-devel]
   rhel: [e2fsprogs-devel]
   ubuntu: [libext2fs-dev]
+libfcl:
+  debian:
+    '*': [libfcl0.7]
+    bullseye: [libfcl0.6]
+    buster: [libfcl0.5]
+  fedora: [fcl]
+  gentoo: [sci-libs/fcl]
+  nixos: [fcl]
+  openembedded: [fcl@meta-ros-common]
+  rhel: [fcl]
+  ubuntu:
+    '*': [libfcl0.7]
+    focal: [libfcl0.5]
 libfcl-dev:
   debian: [libfcl-dev]
   fedora: [fcl-devel]
@@ -7963,9 +7972,7 @@ pybind11-dev:
   ubuntu: [pybind11-dev]
 pybind11-json-dev:
   debian: [pybind11-json-dev]
-  fedora:
-    '*': [pybind11-json-devel]
-    '38': null
+  fedora: [pybind11-json-devel]
   rhel: [pybind11-json-devel]
   ubuntu:
     '*': [pybind11-json-dev]
