@@ -101,7 +101,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/actionlib-release.git
-      version: 1.14.2-1
+      version: 1.14.3-1
     source:
       test_pull_requests: true
       type: git
@@ -2113,7 +2113,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/anilsripadarao/depth-obstacle-detect-ros-release.git
-      version: 1.0.0-2
+      version: 1.0.0-3
     source:
       type: git
       url: https://github.com/analogdevicesinc/depth-obstacle-detect-ros.git
@@ -2183,7 +2183,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/diagnostics-release.git
-      version: 1.11.0-1
+      version: 1.12.1-1
     source:
       test_pull_requests: true
       type: git
@@ -3317,7 +3317,7 @@ repositories:
   foxglove_msgs:
     doc:
       type: git
-      url: https://github.com/foxglove/schemas.git
+      url: https://github.com/foxglove/foxglove-sdk.git
       version: main
     release:
       tags:
@@ -3326,7 +3326,7 @@ repositories:
       version: 2.3.0-1
     source:
       type: git
-      url: https://github.com/foxglove/schemas.git
+      url: https://github.com/foxglove/foxglove-sdk.git
       version: main
     status: developed
   frame_editor:
@@ -3338,7 +3338,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/rqt_frame_editor_plugin-release.git
-      version: 1.1.1-1
+      version: 1.2.0-1
     source:
       type: git
       url: https://github.com/ipa320/rqt_frame_editor_plugin.git
@@ -3688,7 +3688,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/geometry2-release.git
-      version: 0.7.9-1
+      version: 0.7.10-1
     source:
       test_pull_requests: true
       type: git
@@ -4394,7 +4394,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/uos-gbp/imu_tools-release.git
-      version: 1.2.6-1
+      version: 1.2.7-1
     source:
       test_pull_requests: true
       type: git
@@ -5797,7 +5797,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mavlink/mavlink-gbp-release.git
-      version: 2024.10.10-1
+      version: 2025.5.5-1
     source:
       type: git
       url: https://github.com/mavlink/mavlink-gbp-release.git
@@ -5818,7 +5818,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mavlink/mavros-release.git
-      version: 1.20.0-1
+      version: 1.20.1-1
     source:
       test_pull_requests: true
       type: git
@@ -7097,7 +7097,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/nodelet_core-release.git
-      version: 1.11.1-1
+      version: 1.11.2-1
     source:
       test_pull_requests: true
       type: git
@@ -7844,6 +7844,7 @@ repositories:
       - phidgets_analog_inputs
       - phidgets_analog_outputs
       - phidgets_api
+      - phidgets_current_inputs
       - phidgets_digital_inputs
       - phidgets_digital_outputs
       - phidgets_drivers
@@ -7859,7 +7860,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-drivers-gbp/phidgets_drivers-release.git
-      version: 1.0.9-1
+      version: 1.0.10-1
     source:
       test_pull_requests: true
       type: git
@@ -9733,7 +9734,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/ros_comm-release.git
-      version: 1.17.1-1
+      version: 1.17.3-1
     source:
       test_pull_requests: true
       type: git
@@ -10681,7 +10682,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/rqt_launch-release.git
-      version: 0.4.9-1
+      version: 0.4.10-1
     source:
       test_pull_requests: true
       type: git
@@ -10712,7 +10713,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/rqt_moveit-release.git
-      version: 0.5.11-1
+      version: 0.5.13-1
     source:
       type: git
       url: https://github.com/ros-visualization/rqt_moveit.git
@@ -10751,7 +10752,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/rqt_nav_view-release.git
-      version: 0.5.7-1
+      version: 0.5.8-1
     source:
       type: git
       url: https://github.com/ros-visualization/rqt_nav_view.git
@@ -11102,7 +11103,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/introlab/rtabmap-release.git
-      version: 0.21.10-1
+      version: 0.21.13-1
     source:
       type: git
       url: https://github.com/introlab/rtabmap.git
@@ -11133,7 +11134,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/introlab/rtabmap_ros-release.git
-      version: 0.21.10-1
+      version: 0.21.13-1
     source:
       type: git
       url: https://github.com/introlab/rtabmap_ros.git
@@ -11215,7 +11216,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/rviz-release.git
-      version: 1.14.25-1
+      version: 1.14.26-1
     source:
       test_pull_requests: true
       type: git
@@ -11497,7 +11498,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/septentrio-users/septentrio_gnss_driver-release.git
-      version: 1.4.2-1
+      version: 1.4.3-1
     source:
       test_pull_requests: true
       type: git
@@ -11669,11 +11670,6 @@ repositories:
       type: git
       url: https://github.com/ntt-t3/skyway_for_ros.git
       version: main
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ntt-t3/skyway_for_ros-release.git
-      version: 0.0.2-1
     source:
       type: git
       url: https://github.com/ntt-t3/skyway_for_ros.git

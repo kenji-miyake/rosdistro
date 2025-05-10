@@ -1634,7 +1634,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros-event-camera/event_camera_py.git
-      version: rolling
+      version: release
     release:
       tags:
         release: release/kilted/{package}/{version}
@@ -1643,7 +1643,7 @@ repositories:
     source:
       type: git
       url: https://github.com/ros-event-camera/event_camera_py.git
-      version: rolling
+      version: release
     status: developed
   event_camera_renderer:
     doc:
@@ -1737,7 +1737,7 @@ repositories:
       tags:
         release: release/kilted/{package}/{version}
       url: https://github.com/ros2-gbp/fastdds-release.git
-      version: 3.2.1-2
+      version: 3.2.2-1
     source:
       test_commits: true
       test_pull_requests: false
@@ -2194,7 +2194,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros/geometry_tutorials.git
-      version: rolling
+      version: kilted
     release:
       packages:
       - geometry_tutorials
@@ -2203,11 +2203,11 @@ repositories:
       tags:
         release: release/kilted/{package}/{version}
       url: https://github.com/ros2-gbp/geometry_tutorials-release.git
-      version: 0.6.3-2
+      version: 0.6.4-1
     source:
       type: git
       url: https://github.com/ros/geometry_tutorials.git
-      version: rolling
+      version: kilted
     status: developed
   google_benchmark_vendor:
     doc:
@@ -3304,7 +3304,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/LeoRover/leo_common-ros2.git
-      version: rolling
+      version: ros2
     release:
       packages:
       - leo
@@ -3318,13 +3318,13 @@ repositories:
     source:
       type: git
       url: https://github.com/LeoRover/leo_common-ros2.git
-      version: rolling
+      version: ros2
     status: maintained
   leo_desktop:
     doc:
       type: git
       url: https://github.com/LeoRover/leo_desktop-ros2.git
-      version: rolling
+      version: ros2
     release:
       packages:
       - leo_desktop
@@ -3336,26 +3336,27 @@ repositories:
     source:
       type: git
       url: https://github.com/LeoRover/leo_desktop-ros2.git
-      version: rolling
+      version: ros2
     status: maintained
   leo_robot:
     doc:
       type: git
       url: https://github.com/LeoRover/leo_robot-ros2.git
-      version: rolling
+      version: ros2
     release:
       packages:
       - leo_bringup
+      - leo_filters
       - leo_fw
       - leo_robot
       tags:
         release: release/kilted/{package}/{version}
       url: https://github.com/ros2-gbp/leo_robot-release.git
-      version: 2.0.0-2
+      version: 2.1.1-1
     source:
       type: git
       url: https://github.com/LeoRover/leo_robot-ros2.git
-      version: rolling
+      version: ros2
     status: maintained
   leo_simulator:
     doc:
@@ -3387,21 +3388,6 @@ repositories:
       type: git
       url: https://github.com/lgsvl/lgsvl_msgs.git
       version: foxy-devel
-  libcaer:
-    doc:
-      type: git
-      url: https://github.com/ros-event-camera/libcaer.git
-      version: ros_event_camera
-    release:
-      tags:
-        release: release/kilted/{package}/{version}
-      url: https://github.com/ros2-gbp/libcaer-release.git
-      version: 1.0.2-3
-    source:
-      type: git
-      url: https://github.com/ros-event-camera/libcaer.git
-      version: ros_event_camera
-    status: developed
   libcaer_driver:
     doc:
       type: git
@@ -3680,7 +3666,7 @@ repositories:
       tags:
         release: release/kilted/{package}/{version}
       url: https://github.com/ros2-gbp/mavlink-gbp-release.git
-      version: 2024.10.10-2
+      version: 2025.5.5-1
     source:
       type: git
       url: https://github.com/mavlink/mavlink-gbp-release.git
@@ -3700,7 +3686,7 @@ repositories:
       tags:
         release: release/kilted/{package}/{version}
       url: https://github.com/ros2-gbp/mavros-release.git
-      version: 2.9.0-2
+      version: 2.10.0-1
     source:
       type: git
       url: https://github.com/mavlink/mavros.git
@@ -3878,6 +3864,7 @@ repositories:
       - mola_input_paris_luco_dataset
       - mola_input_rawlog
       - mola_input_rosbag2
+      - mola_input_video
       - mola_kernel
       - mola_launcher
       - mola_metric_maps
@@ -3890,7 +3877,7 @@ repositories:
       tags:
         release: release/kilted/{package}/{version}
       url: https://github.com/ros2-gbp/mola-release.git
-      version: 1.6.4-1
+      version: 1.7.0-1
     source:
       type: git
       url: https://github.com/MOLAorg/mola.git
@@ -5154,7 +5141,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros-perception/point_cloud_transport_tutorial.git
-      version: rolling
+      version: kilted
     release:
       tags:
         release: release/kilted/{package}/{version}
@@ -5164,7 +5151,7 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/ros-perception/point_cloud_transport_tutorial.git
-      version: rolling
+      version: kilted
     status: maintained
   pointcloud_to_laserscan:
     doc:
@@ -5914,7 +5901,7 @@ repositories:
       tags:
         release: release/kilted/{package}/{version}
       url: https://github.com/ros2-gbp/rig_reconfigure-release.git
-      version: 1.5.0-2
+      version: 1.6.0-1
     source:
       test_pull_requests: true
       type: git
@@ -6235,7 +6222,7 @@ repositories:
       tags:
         release: release/kilted/{package}/{version}
       url: https://github.com/ros2-gbp/rmw_connextdds-release.git
-      version: 1.1.0-2
+      version: 1.1.0-3
     source:
       type: git
       url: https://github.com/ros2/rmw_connextdds.git
@@ -6784,7 +6771,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/gazebosim/ros_gz.git
-      version: ros2
+      version: kilted
     release:
       packages:
       - ros_gz
@@ -6797,12 +6784,12 @@ repositories:
       tags:
         release: release/kilted/{package}/{version}
       url: https://github.com/ros2-gbp/ros_ign-release.git
-      version: 2.1.6-2
+      version: 2.1.7-1
     source:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebosim/ros_gz.git
-      version: ros2
+      version: kilted
     status: developed
   ros_image_to_qimage:
     doc:
@@ -7747,7 +7734,7 @@ repositories:
       tags:
         release: release/kilted/{package}/{version}
       url: https://github.com/ros2-gbp/rviz-release.git
-      version: 15.0.0-1
+      version: 15.0.1-1
     source:
       test_pull_requests: true
       type: git
@@ -8860,7 +8847,7 @@ repositories:
       tags:
         release: release/kilted/{package}/{version}
       url: https://github.com/ros2-gbp/ur_description-release.git
-      version: 3.1.0-2
+      version: 3.1.1-1
     source:
       type: git
       url: https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git
